@@ -28,58 +28,82 @@ Open **Command Prompt** or terminal and navigate to the project directory:
 
 ```bash
 g++ -std=c++11 chat_application.cpp -o chat -lws2_32 -static -pthread
-Make sure you have g++ and WinSock2 installed properly.
+```
 
-🧪 How to Run
-Start the Server
-bash
-Copy
-Edit
+> Make sure you have g++ and WinSock2 installed properly.
+
+---
+
+## 🧪 How to Run
+
+### Start the Server
+
+```bash
 chat server
+```
+
 You'll see:
 
-nginx
-Copy
-Edit
+```
 Server listening on port 8080...
-Connect a Client (in a new terminal window)
-bash
-Copy
-Edit
-chat client 127.0.0.1
-Replace 127.0.0.1 with the actual IP address if on a network.
+```
 
-Sample Client Interaction
-pgsql
-Copy
-Edit
+### Connect a Client (in a new terminal window)
+
+```bash
+chat client 127.0.0.1
+```
+
+> Replace `127.0.0.1` with the actual IP address if on a network.
+
+### Sample Client Interaction
+
+```
 Connected to server. Type 'exit' to quit.
 > Hello everyone!
+```
+
 Encrypted messages are sent to the server and decrypted before broadcasting.
 
-🔐 Encryption
-The Caesar cipher shifts each alphabetical character by a fixed KEY (set to 5).
+---
+
+## 🔐 Encryption
+
+The Caesar cipher shifts each alphabetical character by a fixed `KEY` (set to 5).  
 This is for demo only – replace it with AES or other secure encryption algorithms for production use.
 
-🧼 Clean Exit
-Type exit in the client to disconnect gracefully.
+---
 
-bash
-Copy
-Edit
+## 🧼 Clean Exit
+
+Type `exit` in the client to disconnect gracefully.
+
+```bash
 > exit
 Disconnected from server
-📁 File Structure
-bash
-Copy
-Edit
+```
+
+---
+
+## 📁 File Structure
+
+```
 chat_application.cpp  # Main server-client source code
 README.md             # Project documentation
-✨ Future Enhancements
-Replace Caesar cipher with AES-256
+```
 
-Add authentication for clients
+---
 
-Cross-platform support (Linux/Mac using select/poll)
+## ✨ Future Enhancements
 
-GUI version using Qt or WinAPI
+- Replace Caesar cipher with AES-256  
+- Add authentication for clients  
+- Cross-platform support (Linux/Mac using `select`/`poll`)  
+- GUI version using Qt or WinAPI  
+
+---
+
+
+
+
+© 2025 Sayak Biswas. All rights reserved.
