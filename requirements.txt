@@ -1,0 +1,11 @@
+# This project is written in C++ and does not use Python packages.
+# The following are system dependencies and tools required to build and run the project:
+
+Operating System: Windows
+Compiler: g++ with C++11 support (e.g., MinGW)
+Libraries:
+- WinSock2 (link with -lws2_32)
+- pthread (for multithreading support if needed by your environment)
+
+# If you're using MSYS2 or a similar environment, you might install packages like:
+# pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-pthreads
