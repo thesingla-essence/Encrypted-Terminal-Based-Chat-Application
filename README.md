@@ -106,4 +106,4 @@ README.md             # Project documentation
 
 
 
-© 2025 Sayak Biswas. All rights reserved.
+© 2025 Mahak Singla. All rights reserved.
